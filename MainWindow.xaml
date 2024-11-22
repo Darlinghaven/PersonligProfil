@@ -1,0 +1,118 @@
+﻿<Window x:Class="PersonligProfil.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PersonligProfil"
+        mc:Ignorable="d"
+        Title="Duke Darlinghaven's Personal Profile WPF Application" Height="814" Width="1200" ResizeMode="NoResize" Background="White">
+
+
+
+    <!-- Header  -->
+    <StackPanel>
+        <StackPanel
+            HorizontalAlignment="Left"
+            Orientation="Vertical">
+            <Button
+                HorizontalAlignment="Left"
+                Background="Black"
+                BorderThickness="0">
+                <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\Header4.jpg" Width="1183" Height="192"></Image>
+            </Button>
+        </StackPanel>
+
+        <!-- SoMe -->
+        <Grid Width="1195">
+            <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled" Margin="5,10,998,0" Height="573" VerticalAlignment="Top">
+                <StackPanel
+            Orientation="Vertical" Width="167">
+                    <TextBlock FontSize="24" Foreground="Black" TextAlignment="Center"> 
+                        <Bold>SoMe</Bold><LineBreak/>
+                    </TextBlock>
+                    <Button Background="Transparent" BorderThickness="0">
+                        <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\github.png" Height="175" Width="154"></Image>
+                    </Button>
+                    <Button Background="Transparent" BorderThickness="0">
+                        <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\insta.png" Height="175" Width="154"></Image>
+                    </Button>
+                    <Button Background="Transparent" BorderThickness="0">
+                        <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\lin.png" Height="175" Width="154"></Image>
+                    </Button>
+                    <Button Background="Transparent" BorderThickness="0">
+                        <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\twitch.png" Height="175" Width="154"></Image>
+                    </Button>
+                    <Button Background="Transparent" BorderThickness="0">
+                        <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\yt.png" Height="175" Width="154"></Image>
+                    </Button>
+                </StackPanel>
+            </ScrollViewer>
+
+            <!-- General Cover Letter -->
+            <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled" Margin="202,10,440,25">
+                <StackPanel
+                Orientation="Vertical" Width="537"
+                >
+                    <TextBlock FontSize="24" Foreground="Black" TextAlignment="Center"> 
+                        <Bold> General Cover Letter </Bold><LineBreak/>
+                    </TextBlock>
+                    <TextBlock FontSize="20" Foreground="Black" TextAlignment="Justify" TextWrapping="Wrap" Width="520" Height="492">
+                    <Run Text="My goal was always consulting in regards to national tax legislation in Denmark. However, I lost interest in the hardcore law part during my Masters."/><LineBreak/>
+                    <Run Text="After doing some soul-searching and trying to figure out what my passion in life was, I quickly realised that gaming and IT had always been a big part of my life."/><LineBreak/>
+                    <Run Text="Given how technology has advanced and especially AI-technology, I decided &quot;why not combine my background in law with my interest in IT?&quot;"/><LineBreak/>
+                    <Run Text="My goal is developing legal tech for firms wanting to implement better and easier legal tech."/><LineBreak/>
+                    <Run Text="This page will serve as a memento of my journey and also in time be something I can access to be able to look back and see my growth as a developer."/><LineBreak/><LineBreak/>
+                        
+                    <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\thumbnail_Outlook-vexqxcdm.png" Height="61" Width="248" Margin="-25,0,0,-10"></Image><LineBreak/>
+                    <Run Text="Duke Darlinghaven"/>
+                    </TextBlock>
+
+                </StackPanel>
+            </ScrollViewer>
+
+            <!-- CV -->
+            <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled" Margin="760,10,10,0" Height="573" VerticalAlignment="Top">
+                <StackPanel
+                Orientation="Vertical"
+                Width="402">
+                    <TextBlock FontSize="24" Foreground="Black" TextAlignment="center" TextWrapping="Wrap" Width="392">
+                    <Bold><Run Text="CV"/></Bold><LineBreak/>
+                    </TextBlock>
+                    <TextBlock FontSize="20" Foreground="Black" TextAlignment="Justify" TextWrapping="Wrap" Width="392">
+                    <Bold><Run Text="Languages"/></Bold><LineBreak/>
+                    <Run Text="•   Danish Proficiency - Fluent"/><LineBreak/>
+                        <Run Text="•   English Proficiency - Fluent"/><LineBreak/><LineBreak/>
+                        <Bold><Run Text="Skills"/></Bold><LineBreak/>
+                        <Run Text="• TEFL (Teaching English as a Foreign Language) - Intermediate"/><LineBreak/>
+                        <Run Text="•   Online Teaching - Intermediate"/><LineBreak/>
+                        <Run Text="•   Lesson Planning - Intermediate"/><LineBreak/>
+                        <Run Text="•   Windows Office Suite - Advanced"/><LineBreak/>
+                        <Run Text="•   C# - Beginner"/><LineBreak/>
+                        <Run Text="•   HTML - Beginner"/><LineBreak/>
+                        <Run Text="•   CSS - Beginner"/><LineBreak/><LineBreak/>
+                        <Bold><Run Text="Employment History"/></Bold><LineBreak/>
+                        <Italic><Run Text="•  Waiter - Restaurant Det Gamle Apothek, Randers (July 2021 - Present)"/><LineBreak/></Italic>
+                        <Run Text="      - Managed high volume of customers during peak hours, maintaining prompt and efficient service."/><LineBreak/>
+                        <Run Text="      - Trained new servers on restaurant policies and procedures."/><LineBreak/>
+                        <Run Text="      - Set up banquet events according to specific client requirements, ensuring a successful event experience for all attendees."/><LineBreak/>
+                        <Run Text="      - Displayed enthusiasm and promoted excellent service to customers, successfully increasing referrals, and walk-in business."/><LineBreak/>
+                        <Run Text="      - Handled customer complaints diplomatically, working towards satisfactory solutions that ultimately retained loyal clientele."/><LineBreak/>
+                        <Run Text="      - Provided recommendations on menu items and upsold food and drinks to increase sales."/><LineBreak/><LineBreak/>
+                        <Italic><Run Text="•  Student Worker - Royal Danish Library, Aarhus (August 2020 - August 2022)"/><LineBreak/></Italic>
+                        <Run Text="      - Supported research efforts, assisting students, and professors in locating relevant sources for their projects."/><LineBreak/>
+                        <Run Text="      - Improved library atmosphere by maintaining a clean and quiet environment conducive to study and learning."/><LineBreak/>
+                        <Run Text="      - Assisted library staff with clerical duties to help lighten their workload."/><LineBreak/>
+                        <Run Text="      - Provided instructions to patrons by explaining and demonstrating proper use of equipment, library automation system, and online resources."/><LineBreak/>
+                        <Run Text="      - Reorganized shelving sections resulting in optimal space usage."/><LineBreak/><LineBreak/>
+                        <Bold><Run Text="Previous Employment"/></Bold><LineBreak/>
+                        <Run Text="•   Student Teacher - The rolling University, Aarhus University, Aarhus C, Denmark."/><LineBreak/>
+                        <Run Text="•   Private Tutor - Online and in-person."/><LineBreak/><Run Text="Front Desk Receptionist - Best Western Plus Hotel Kronjylland, Randers, Denmark."/><LineBreak/>
+                        <Run Text="•   Front Desk Receptionist - The Mayor Hotel, Aarhus, Denmark."/><LineBreak/><LineBreak/>
+                        <Bold><Run Text="Education Level"/></Bold><LineBreak/>
+                        <Run Text="• LL.B. (Bachelor of Laws) - Aarhus University, Aarhus, Denmark (2020)"/><LineBreak/>
+                    </TextBlock>
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+    </StackPanel>
+</Window>
