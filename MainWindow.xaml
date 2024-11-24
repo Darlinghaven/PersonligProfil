@@ -5,9 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PersonligProfil"
         mc:Ignorable="d"
-        Title="Duke Darlinghaven's Personal Profile WPF Application" Height="814" Width="1200" ResizeMode="NoResize" Background="White">
-
-
+        Title="Duke Darlinghaven's Personal Profile WPF Application" Height="820" Width="1200" ResizeMode="NoResize" Background="White">
 
     <!-- Header  -->
     <StackPanel>
@@ -17,68 +15,117 @@
             <Button
                 HorizontalAlignment="Left"
                 Background="Black"
-                BorderThickness="0">
-                <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\Header4.jpg" Width="1183" Height="192"></Image>
+                BorderThickness="0"
+                Click="Button_Click">
+                <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\Header.jpg" Width="auto" Height="auto"></Image>
             </Button>
         </StackPanel>
 
         <!-- SoMe -->
-        <Grid Width="1195">
-            <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled" Margin="5,10,998,0" Height="573" VerticalAlignment="Top">
+        <Grid Width="1196" Height="583">
+            <ScrollViewer Grid.Column="0" VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled" Margin="5,10,998,5" Height="573" VerticalAlignment="Top">
                 <StackPanel
             Orientation="Vertical" Width="167">
                     <TextBlock FontSize="24" Foreground="Black" TextAlignment="Center"> 
                         <Bold>SoMe</Bold><LineBreak/>
                     </TextBlock>
-                    <Button Background="Transparent" BorderThickness="0">
+                    <Button Background="Transparent" BorderThickness="0"
+                            Click="Button_Click_1">
                         <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\github.png" Height="175" Width="154"></Image>
                     </Button>
-                    <Button Background="Transparent" BorderThickness="0">
+                    <Button Background="Transparent" BorderThickness="0"
+                            Click="Button_Click_2">
                         <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\insta.png" Height="175" Width="154"></Image>
                     </Button>
-                    <Button Background="Transparent" BorderThickness="0">
+                    <Button Background="Transparent" BorderThickness="0"
+                            Click="Button_Click_3">
                         <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\lin.png" Height="175" Width="154"></Image>
                     </Button>
-                    <Button Background="Transparent" BorderThickness="0">
+                    <Button Background="Transparent" BorderThickness="0"
+                            Click="Button_Click_4">
                         <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\twitch.png" Height="175" Width="154"></Image>
                     </Button>
-                    <Button Background="Transparent" BorderThickness="0">
+                    <Button Background="Transparent" BorderThickness="0"
+                            Click="Button_Click_5">
                         <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\yt.png" Height="175" Width="154"></Image>
                     </Button>
                 </StackPanel>
             </ScrollViewer>
 
             <!-- General Cover Letter -->
-            <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled" Margin="202,10,440,25">
-                <StackPanel
-                Orientation="Vertical" Width="537"
-                >
-                    <TextBlock FontSize="24" Foreground="Black" TextAlignment="Center"> 
-                        <Bold> General Cover Letter </Bold><LineBreak/>
-                    </TextBlock>
-                    <TextBlock FontSize="20" Foreground="Black" TextAlignment="Justify" TextWrapping="Wrap" Width="520" Height="492">
-                    <Run Text="My goal was always consulting in regards to national tax legislation in Denmark. However, I lost interest in the hardcore law part during my Masters."/><LineBreak/>
-                    <Run Text="After doing some soul-searching and trying to figure out what my passion in life was, I quickly realised that gaming and IT had always been a big part of my life."/><LineBreak/>
-                    <Run Text="Given how technology has advanced and especially AI-technology, I decided &quot;why not combine my background in law with my interest in IT?&quot;"/><LineBreak/>
-                    <Run Text="My goal is developing legal tech for firms wanting to implement better and easier legal tech."/><LineBreak/>
-                    <Run Text="This page will serve as a memento of my journey and also in time be something I can access to be able to look back and see my growth as a developer."/><LineBreak/><LineBreak/>
-                        
-                    <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\thumbnail_Outlook-vexqxcdm.png" Height="61" Width="248" Margin="-25,0,0,-10"></Image><LineBreak/>
-                    <Run Text="Duke Darlinghaven"/>
-                    </TextBlock>
+            <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled" Margin="202,0,440,0" Height="583" VerticalAlignment="Top">
+                <!-- Tab Control -->
+                <TabControl BorderThickness="1" Height="573">
+                    <!-- Tab 1: General Cover Letter -->
+                    <TabItem Header="General Cover Letter" FontSize="20" FontWeight="Bold" Width="274.5">
+                        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                            <StackPanel Margin="10">
+                                <TextBlock TextWrapping="Wrap" FontSize="20" FontWeight="Normal">
+                                    I have a bachelor's degree in law, which I want to combine with an IT education, with the goal of developing the Legal Tech of the future, nationally, but hopefully also internationally. It was originally my plan to complete my Masters in Law, but towards the end of the degree 
+                                    I decided that I would rather go into IT as a profession.
+                                    <LineBreak/><LineBreak/>
+                                    I have previously attended a semester at UCL's online computer science course, but had to drop out due to time constraints as I had to juggle my divorce at the same time as my current job while also trying to keep up at school. I got to work with C# and a little MS SQL, as well as UML diagrams and SCRUM.
+                                    <LineBreak/><LineBreak/>
+                                    I have work experience from the hotel and service industry, which has developed my skills in keeping a cool head in stressful situations with countless guests who depend on one's work, as well as having to work independently, but at the same time in a team with my colleagues. My experiences from my academic life at the university has developed my skills in communicating 
+                                    complex legal material in a more digestable way for non-lawyers. My teaching experience with Det Rullende University has developed my skills in doing something as boring as the constitution and the European one human rights convention exciting for high school students. Common to all my previous positions and my current position is professionalism in one's appearance, readiness to adapt during the day and responsibility towards the customer/guest as well as the company.
+                                    <LineBreak/><LineBreak/>
+                                    On a personal level, I can mention that I am an inveterate gamer, and stream a little bit when the time comes allows it on Twitch. My interest in gaming gave me the idea to combine law with IT. Besides the above, I am trying to learn Japanese, but it is a slow undertaking given the complexity of the language,and the lack of much spare time in everyday life, but I find it to be a fun challenge.
+                                    <LineBreak/><LineBreak/>
+                                    I hope the above has given you enough insight into whether I could be a potential apprentice at your firm. 
+                                    For inquries I would prefer contact via e-mail.
+                                    <LineBreak/><LineBreak/>
+                                    Best regards
+                                    <LineBreak/>
+                                    <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\thumbnail_Outlook-vexqxcdm.png" Width="150px" Margin="-5,10,0,-10"/>
+                                    <LineBreak/>
+                                    Duke Darlinghaven
+                                    
+                                </TextBlock>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </TabItem>
 
-                </StackPanel>
+                    <!-- Tab 2: Mission Statement -->
+                    <TabItem Header="Mission Statement" FontSize="20" FontWeight="Bold" Width="274.5">
+                        <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                            <StackPanel Margin="10">
+                                <TextBlock TextWrapping="Wrap" FontSize="20" FontWeight="Normal">
+                                    My goal was always consulting in regards to national tax legislation in Denmark.
+                                    However, I lost interest in the hardcore law part during my Masters.
+                                    <LineBreak/><LineBreak/>
+                                    After doing some soul-searching and trying to figure out what my passion in life was,
+                                    I quickly realised that gaming and IT had always been a big part of my life.
+                                    <LineBreak/><LineBreak/>
+                                    Given how technology has advanced and especially AI-technology, I decided 
+                                    "why not combine my background in law with my interest in IT?"
+                                    <LineBreak/><LineBreak/>
+                                    My goal is developing legal tech for firms wanting to implement better and easier legal tech.
+                                    <LineBreak/><LineBreak/>
+                                    This page will serve as a memento of my journey and also in time be something I can access
+                                    to be able to look back and see my growth as a developer.
+                                    <LineBreak/><LineBreak/>
+                                    Best regards
+                                    <LineBreak/>
+                                    <Image Source="C:\Users\Darlinghaven\source\repos\PersonligProfil\Assets\thumbnail_Outlook-vexqxcdm.png" Width="150px" Margin="-5,10,0,-10"/>
+                                    <LineBreak/>
+                                    Duke Darlinghaven
+                                    
+                                </TextBlock>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </TabItem>
+                </TabControl>
             </ScrollViewer>
 
             <!-- CV -->
-            <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled" Margin="760,10,10,0" Height="573" VerticalAlignment="Top">
+            <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Disabled" Margin="760,10,10,5" Height="573" VerticalAlignment="Top">
                 <StackPanel
                 Orientation="Vertical"
                 Width="402">
                     <TextBlock FontSize="24" Foreground="Black" TextAlignment="center" TextWrapping="Wrap" Width="392">
                     <Bold><Run Text="CV"/></Bold><LineBreak/>
                     </TextBlock>
-                    <TextBlock FontSize="20" Foreground="Black" TextAlignment="Justify" TextWrapping="Wrap" Width="392">
+                    <TextBlock FontSize="20" Foreground="Black" TextAlignment="Justify" TextWrapping="Wrap" Width="392" Height="1769">
                     <Bold><Run Text="Languages"/></Bold><LineBreak/>
                     <Run Text="•   Danish Proficiency - Fluent"/><LineBreak/>
                         <Run Text="•   English Proficiency - Fluent"/><LineBreak/><LineBreak/>
